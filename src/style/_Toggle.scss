@@ -1,0 +1,35 @@
+$color_checkbox_success:#656ff5;
+$color_checkbox_default: #dcdcdc;
+$transition: .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$width: 10em;
+$height: $width/5;
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  background: $color_checkbox_default;
+}
+
+.toggle-btn {
+  width: 50%;
+  padding: 10px 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background-color: $color_checkbox_success;
+  border-radius: 1rem;
+  transition: .5s;
+}

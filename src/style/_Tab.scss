@@ -1,0 +1,42 @@
+$color_tab_button:#656ff5;
+$mainColor:#ef373e;
+
+.Tabs {
+  background-color: #dcdcdc;
+  color: rgba(255, 255, 255, 1);;
+  font-weight: bold;
+  display: flex;
+  justify-items: center;
+  list-style: none;
+  padding-inline-start: 0;
+
+  .tabMenu {
+    width: 100%;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .focused {
+    color: $color_tab_button;
+    transition: .2s;
+  }
+}
+
+.tabContent {
+  text-align: center;
+  color: $color_tab_button;
+  padding-top: 1vh;
+}
+
+#tab{
+    position: relative;
+    width: 33.33%;
+    height: 5px;
+    background-color: $color_checkbox_success;
+    left: 0;
+    top: 4rem;
+    border-radius: 1rem;
+    transition: .5s;
+  }

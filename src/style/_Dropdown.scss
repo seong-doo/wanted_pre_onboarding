@@ -1,0 +1,66 @@
+.dropdownBox {
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown {
+  width: 400px;
+  margin-left: 160px;
+  position: relative;
+  user-select: none; // 사용자가 메뉴 드래그 하는것을 방지
+
+  .dropdownBtn {
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .dropList {
+      position: absolute;
+      top: 110%;
+      height: 20vh;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+      font-weight: 500;
+      color: #333;
+      width: 95%;
+      overflow: scroll;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+
+      .item {
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &.search {
+          .searchInput {
+            height: 100%;
+            width: 90%;
+            font-size: 1.1rem;
+            border: none;
+            border-bottom: 1px solid rgb(172, 172, 172);
+          }
+          
+          &:hover{
+            background: #ffffff;
+          }
+        }
+
+        &:hover{
+          background: #f4f4f4; 
+        }
+      }
+  }
+}
+
+

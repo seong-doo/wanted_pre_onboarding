@@ -1,0 +1,54 @@
+.rangeBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  .rangeValue {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    border: 2.5px solid rgb(163, 163, 163);
+    border-radius: .3rem;
+    width: 170px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    .valueNum {
+      color: rgb(163, 163, 163);
+      font-size: 20px;
+    }
+
+    .persent{
+      color: rgb(163, 163, 163);
+      font-size: 15px;
+    }
+  }
+
+  .slider {
+    width: 200px;
+    background: linear-gradient(#656ff5, #656ff5);
+    background-repeat: no-repeat;
+    height: 20px;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+    -webkit-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+    -moz-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+  
+    &::-webkit-slider-thumb {
+      cursor: pointer;
+      appearance: none;
+      height: 35px;
+      width: 35px;
+      background-color: #656ff5;
+      border-radius: 50%;
+      border: 7px solid #fff;
+      box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+      -webkit-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+      -moz-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+    }
+  }
+}

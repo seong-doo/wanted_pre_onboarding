@@ -1,0 +1,111 @@
+$normal-font-size : 1rem;
+$small-font-size : 0.75rem;
+$border-color : #fff;
+$input-color : rgb(124, 124, 124);
+$first-color : #656ff5;
+$wrong-color : #f56565;
+
+.InputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputDiv {
+  position: relative;
+  height: 10px;
+  margin-bottom: 4rem;
+}
+
+.inputFrom {
+  position: absolute;
+  top: 0;
+  left: 7rem;
+  width: 65%;
+  height: 100%;
+  font-size: $normal-font-size;
+  border: 2px solid $border-color;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+
+.inputLabel {
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #f0f0f0;
+  color: $input-color;
+  font-size: $normal-font-size;
+  transition: .3s;
+}
+
+.inputFrom:focus + .inputLabel { 
+  top: -.5rem;
+  left: 8.3rem;
+  color: $first-color;
+  font-size: $small-font-size;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.inputFrom:not(:placeholder-shown).inputFrom:not(:focus)+ .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  font-size: $small-font-size;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.inputFrom:focus { 
+  border: 2.5px solid $first-color;
+}
+
+.inputFrom_none {
+  position: absolute;
+  top: 0;
+  left: 7rem;
+  width: 65%;
+  height: 100%;
+  font-size: $normal-font-size;
+  border: 2px solid $border-color;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+  }
+
+.inputFrom_none:focus + .inputLabel { 
+  top: -.5rem;
+  left: 8.3rem;
+  color: $wrong-color;
+  font-size: $small-font-size;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.inputFrom_none:not(:placeholder-shown).inputFrom_none:not(:focus)+ .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  font-size: $small-font-size;
+  color: $wrong-color;
+  border-color: $wrong-color;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.inputFrom_none:focus { 
+  border: 2.5px solid $wrong-color;
+}
+
+.eye {
+  position: absolute;
+  margin-left: 40vw;
+  top: 15px;
+  color: $input-color;
+  cursor: pointer;
+  z-index: 20;
+}

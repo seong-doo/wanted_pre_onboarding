@@ -1,0 +1,281 @@
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  background: #dcdcdc; }
+
+.toggle-btn {
+  width: 50%;
+  padding: 10px 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center; }
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background-color: #656ff5;
+  border-radius: 1rem;
+  transition: .5s; }
+
+.Tabs {
+  background-color: #dcdcdc;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-items: center;
+  list-style: none;
+  padding-inline-start: 0; }
+  .Tabs .tabMenu {
+    width: 100%;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center; }
+  .Tabs .focused {
+    color: #656ff5;
+    transition: .2s; }
+
+.tabContent {
+  text-align: center;
+  color: #656ff5;
+  padding-top: 1vh; }
+
+#tab {
+  position: relative;
+  width: 33.33%;
+  height: 5px;
+  background-color: #656ff5;
+  left: 0;
+  top: 4rem;
+  border-radius: 1rem;
+  transition: .5s; }
+
+.rangeBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .rangeBox .rangeValue {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    border: 2.5px solid #a3a3a3;
+    border-radius: .3rem;
+    width: 170px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between; }
+    .rangeBox .rangeValue .valueNum {
+      color: #a3a3a3;
+      font-size: 20px; }
+    .rangeBox .rangeValue .persent {
+      color: #a3a3a3;
+      font-size: 15px; }
+  .rangeBox .slider {
+    width: 200px;
+    background: linear-gradient(#656ff5, #656ff5);
+    background-repeat: no-repeat;
+    height: 20px;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+    -webkit-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+    -moz-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75); }
+    .rangeBox .slider::-webkit-slider-thumb {
+      cursor: pointer;
+      appearance: none;
+      height: 35px;
+      width: 35px;
+      background-color: #656ff5;
+      border-radius: 50%;
+      border: 7px solid #fff;
+      box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+      -webkit-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75);
+      -moz-box-shadow: 2px 8px 13px -3px rgba(116, 114, 114, 0.75); }
+
+.InputBox {
+  display: flex;
+  flex-direction: column; }
+
+.inputDiv {
+  position: relative;
+  height: 10px;
+  margin-bottom: 4rem; }
+
+.inputFrom {
+  position: absolute;
+  top: 0;
+  left: 7rem;
+  width: 65%;
+  height: 100%;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1; }
+
+.inputLabel {
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #f0f0f0;
+  color: #7c7c7c;
+  font-size: 1rem;
+  transition: .3s; }
+
+.inputFrom:focus + .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  color: #656ff5;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10; }
+
+.inputFrom:not(:placeholder-shown).inputFrom:not(:focus) + .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10; }
+
+.inputFrom:focus {
+  border: 2.5px solid #656ff5; }
+
+.inputFrom_none {
+  position: absolute;
+  top: 0;
+  left: 7rem;
+  width: 65%;
+  height: 100%;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1; }
+
+.inputFrom_none:focus + .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  color: #f56565;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10; }
+
+.inputFrom_none:not(:placeholder-shown).inputFrom_none:not(:focus) + .inputLabel {
+  top: -.5rem;
+  left: 8.3rem;
+  font-size: 0.75rem;
+  color: #f56565;
+  border-color: #f56565;
+  font-weight: 500;
+  z-index: 10; }
+
+.inputFrom_none:focus {
+  border: 2.5px solid #f56565; }
+
+.eye {
+  position: absolute;
+  margin-left: 40vw;
+  top: 15px;
+  color: #7c7c7c;
+  cursor: pointer;
+  z-index: 20; }
+
+.dropdownBox {
+  width: 100%;
+  height: 100%; }
+
+.dropdown {
+  width: 400px;
+  margin-left: 160px;
+  position: relative;
+  user-select: none; }
+  .dropdown .dropdownBtn {
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+  .dropdown .dropList {
+    position: absolute;
+    top: 110%;
+    height: 20vh;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: 500;
+    color: #333;
+    width: 95%;
+    overflow: scroll; }
+    .dropdown .dropList::-webkit-scrollbar {
+      display: none; }
+    .dropdown .dropList .item {
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.3s; }
+      .dropdown .dropList .item.search .searchInput {
+        height: 100%;
+        width: 90%;
+        font-size: 1.1rem;
+        border: none;
+        border-bottom: 1px solid #acacac; }
+      .dropdown .dropList .item.search:hover {
+        background: #ffffff; }
+      .dropdown .dropList .item:hover {
+        background: #f4f4f4; }
+
+.boxWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--mainBackgroundColor);
+  box-sizing: border-box; }
+
+.title {
+  font-size: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  color: #656ff5; }
+
+.boxTitle {
+  font-size: 1.5rem;
+  margin: 1rem 1.5rem;
+  float: left;
+  color: #656ff5; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 30vh;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--borderColor);
+  background-color: var(--boxBackgroundColor);
+  box-shadow: 1px 1px 3px var(--borderColor); }
+  .box.Drop {
+    height: 40vh; }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --mainBackgroundColor: white;
+    --boxBackgroundColor: #f0f0f0;
+    --borderColor: #2e2e2e; } }
